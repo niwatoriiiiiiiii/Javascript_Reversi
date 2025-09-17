@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(4, 60px);
+    border: 2px solid #333;
+    background-color: #272;
+    margin: 20px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.disc {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.info {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.info button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
